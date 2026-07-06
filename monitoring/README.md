@@ -14,12 +14,13 @@ wget -c https://github.com/prometheus/node_exporter/releases/download/v${VERSION
 #### 3. Extract node_exporter
 
 ```shell
-tar xvf node_exporter-0.18.1.linux-amd64.tar.gz
+tar xvf node_exporter-1.11.1.linux-amd64.tar.gz
 ```
 
 #### 4. Copy node_exporter to /opt
 
 ```shell
+cd node_exporter-1.11.1.linux-amd64
 sudo mv node_exporter-0.18.1.linux-amd64 /opt/node_exporter
 sudo chown -R node_exporter:node_exporter /opt/node_exporter
 ```
